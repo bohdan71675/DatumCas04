@@ -16,5 +16,11 @@ namespace DatumCas04
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int x = int.Parse(textBox1.Text);
+            MessageBox.Show(Class1.PocetDnu(dateTimePicker1.Value, x).ToString());
+        }
     }
 }
